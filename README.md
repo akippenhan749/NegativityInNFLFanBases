@@ -16,10 +16,10 @@ The dataset for this project was collected using the Twitter API. In conjunction
 |----------|-----------|-------------|---------|
 | text | String | The text of the tweet | 'Let's go Bills! #BillsMafia' |
 | team | String | The team whose hashtag is found in the tweet | 'Buffalo Bills' |
-| compound | Numeric | The overall sentiment score of the tweet, ranging from -1 to 1 with -1 being most negative and 1 being most positive | <div style='text-align:center;'> 0.5 |
-| negative | Numeric | The negative sentiment score of the tweet, ranging from 0 to 1 with 0 being least negative and 1 being most negative | <div style='text-align:center;'> 0.4 |
-| positive | Numeric | The positive sentiment score of the tweet, ranging from 0 to 1 with 0 being least positive and 1 being most positive | <div style='text-align:center;'> 0.6 |
-| neutral | Numeric | The neutral sentiment score of the tweet, ranging from 0 to 1, 0 being least neutral, 1 being most neutral | <div style='text-align:center;'> 0 |
+| compound | Numeric | The overall sentiment score of the tweet, ranging from -1 to 1 with -1 being most negative and 1 being most positive | 0.5 |
+| negative | Numeric | The negative sentiment score of the tweet, ranging from 0 to 1 with 0 being least negative and 1 being most negative | 0.4 |
+| positive | Numeric | The positive sentiment score of the tweet, ranging from 0 to 1 with 0 being least positive and 1 being most positive | 0.6 |
+| neutral | Numeric | The neutral sentiment score of the tweet, ranging from 0 to 1, 0 being least neutral, 1 being most neutral | 0 |
 
 ## Figures
 
