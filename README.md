@@ -30,6 +30,8 @@ Note that collection of the data comes through the twitter API, which requires a
 
 ## Figures
 
+### Table of Contents
+
 | Figure Name | Variables | Summary |
 |----------|-----------|-------------|
 | Boxplot Compound by Region | x = `Region`, y = `Compound` | Boxplot There is not clear differences in distributions between Regions for Compound score. The medians for all appear to be the same, with the West being the most condensed. |
