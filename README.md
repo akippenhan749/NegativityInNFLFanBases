@@ -8,8 +8,11 @@ This repository contains code, data and figures for a data science project inves
 
 ### Installing/Building Code in this Repository
 
+The code found in this repository is two files - nfl_tweets.py and project1code.R. The nfl_tweets.py file is the data collection file that was built using Python in Spyder. In this file a user's Twitter API access tokens/credentials, then loops through each NFL team's hashtag, mines 1000 tweets using the hashtag as the keyword, and calculates the sentiment scores of each tweet, then compiles all the information into one dataframe, which was then exported as a CSV. The project1code.R is an R file built out in RStudio. The file contains the code used for exploratory data analysis, creating relevant figures, and the actual analysis for the hypothesis of the project. 
 
 ### Usage of Code in this Repository
+
+Given the contents of this repository, users can use certain pieces of code for different contexts. The python data collection file could be used as a general Twitter API process. One could switch out the keywords being used and the context of use in order to conduct sentiment analysis on another topic of interest. The R EDA/analysis code could be used as reference on creating different visuals applicable to this topic, as well as how to conduct appropriate analysis on such a hypothesis. 
 
 ## Data
 
@@ -30,14 +33,14 @@ Note that collection of the data comes through the twitter API, which requires a
 
 ## Figures
 
-#### Table of Contents
+### Table of Contents
 
-| Figure Name | Variables | Description | Summary |
-|----------|-----------|-------------|-------------|
-| Boxplot Compound by Region | x = `Region`, y = `Compound` | Boxplot of Compound Measurement by NFL Regions (Northeast, West, South, Midwest) | There is not clear differences in distributions between Regions for Compound score. The medians for all appear to be the same, with the West being the most condensed. |
-| Boxplot Compound by Team | x = `Team`, y = `Compound` | Boxplot of Compound Measurement by NFL Teams |There are clear differences in distributions between Teams for Compound score. The New England Patriots have the lowest distribution and the Dallas Cowboys have the most condensed distribution around the median. |
-| Boxplot Negative by Team | x = `Team`, y = `Compound` | Boxplot of Negativity Measurement by NFL Teams | There are clear differences in distributions between Teams for Negative score. Some teams have little to no negative ratings above 0, while others have a more visble distribution. All distributions have a median around 0. | 
-| HistogramDensity Compound by Region | x = `Compound`, y = Density, colored density curves by `Region`| Histogram of Density of Compound Measurment with Density Curves by NFL Regions (Northeast, West, South, Midwest) | The density plot shows a roughly normal distribution for each Region, with a large density around the median. The West has the highest density around the median and the Midwest has the lowest. | 
+| Figure Name | Variables | Summary |
+|----------|-----------|-------------|
+| Boxplot Compound by Region | x = `Region`, y = `Compound` | Boxplot There is not clear differences in distributions between Regions for Compound score. The medians for all appear to be the same, with the West being the most condensed. |
+| Boxplot Compound by Team | x = `Team`, y = `Compound` | There are clear differences in distributions between Teams for Compound score. The New England Patriots have the lowest distribution and the Dallas Cowboys have the most condensed distribution around the median. |
+| Boxplot Negative by Team | x = `Team`, y = `Compound` | There are clear differences in distributions between Teams for Negative score. Some teams have little to no negative ratings above 0, while others have a more visble distribution. All distributions have a median around 0. | 
+| HistogramDensity Compound by Region | x = `Compound`, y = Density, colored density curves by `Region`| The density plot shows a roughly normal distribution for each Region, with a large density around the median. The West has the highest density around the median and the Midwest has the lowest. | 
 
 ## References
 
