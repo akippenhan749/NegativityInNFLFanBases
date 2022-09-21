@@ -2,7 +2,10 @@
 
 ## Repository Contents
 
+This repository contains the background information, data file, source code, and figures for our DS4002 Project of sentiment analysis of NFL fanbase tweets. The "data" folder holds the csv file containing the tweets and sentiment scores. The "src" folder contains the code files used for data collection and analysis. The "figures" folder contains relevant numerical and graphical summaries, with appropirate notes used throughout the analysis of the data. The license.md file contains the license that explains the terms under which visitors can use and cite this repository. The README.md file contains the high-level overview of all of the components of the repository. Lastly, referneces are cited at the end of the README.
+
 ### Installing/Building Code in this Repository
+
 
 ### Usage of Code in this Repository
 
