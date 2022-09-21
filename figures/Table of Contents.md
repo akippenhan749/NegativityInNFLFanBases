@@ -1,4 +1,4 @@
-# Table of Contents for Figures
+### Table of Contents for Figures
 
 | Figure Name | Variables | Summary |
 |----------|-----------|-------------|
