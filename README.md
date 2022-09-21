@@ -2,23 +2,42 @@
 
 ## Repository Contents
 
-This repository contains code, data and figures for a data science project investigating negativity in NFL fan bases across the country through sentiment analysis of tweets.
+This repository contains code, data and figures for a data science project investigating negativity in NFL fan bases across the country through sentiment analysis of tweets. This project was created as part of the Data Science Project Course (DS 4002)  at the University of Virginia in the Fall of 2022.
 
-## SRC
+## Source Code
+
+Source code for this project can be found in the `src` directory of this repository.
 
 ### Installing/Building Code in this Repository
 
-The code found in this repository is two files - nfl_tweets.py and project1code.R. The nfl_tweets.py file is the data collection file that was built using Python in Spyder. In this file a user's Twitter API access tokens/credentials, then loops through each NFL team's hashtag, mines 1000 tweets using the hashtag as the keyword, and calculates the sentiment scores of each tweet, then compiles all the information into one dataframe, which was then exported as a CSV. The project1code.R is an R file built out in RStudio. The file contains the code used for exploratory data analysis, creating relevant figures, and the actual analysis for the hypothesis of the project. 
+After cloning or forking this repository, its contents can be used to recreate different parts of this project. A Twitter developer account is required to access the Twitter API and recreate the data collection portion of this project. Additionally, the required modules and packages used in Python and R for this project are listed below.
+
+### Modules and Packages Used in this Project
+
+#### Python Modules
+
+This project makes use of the following Python modules:
+- `nltk` - to perform sentiment analysis
+- `pandas` - to manipulate data
+- `re` - to filter out retweets in the dataset
+- `tweetpy` - to access the Twitter API
+
+#### R Packages
+
+This project makes use of the following R packages:
+- `dplyr` - to manipulate data
+- `ggplot2` - to create figures
+- `tidyverse` - package containing `dplyr`, `ggplot2` and other data analysis tools
 
 ### Usage of Code in this Repository
 
-Given the contents of this repository, users can use certain pieces of code for different contexts. The python data collection file could be used as a general Twitter API process. One could switch out the keywords being used and the context of use in order to conduct sentiment analysis on another topic of interest. The R EDA/analysis code could be used as reference on creating different visuals applicable to this topic, as well as how to conduct appropriate analysis on such a hypothesis. 
+The code in this repository consists of 2 files: `NFL_tweets.py` ([src](src/NFL_tweets.py)) and `project1code.R` ([src](src/project1Code.R)). The `NFL_tweets.py` file contains code used for data collection. In this file, the Twitter API token is authenticated, then the code loops through each NFL team's hashtag, mines 1000 tweets using the hashtag as the keyword and calculates the sentiment score of each tweet. It then compiles all the information into one dataframe and removes duplicate retweet values. The `project1code.R` file contains the code used for the exploratory data analysis portion of this project, creating relevant figures and hypothesis testing.
 
 ## Data
 
-The dataset for this project was collected using the Twitter API. In conjunction with Python, tweets were mined that contained specific hashtags related to each of the NFL's 32 teams. Each tweet was sorted by which team it related to and a sentiment score was calculated for each one. To start, 1000 tweets were collected for hashtags related to each team totaling in a dataset of 32,000 tweets. However, after removing duplicate tweets such as retweets, roughly 13,000 original tweets remained in the dataset. The tweets collected were the most recent found and so reflect recent sentiments expressed by Twitter users. VADER sentiment scores were calculated within the original data collection process and are present in the dataset. The dataset can be found in CSV format in the data directory of this repository in `nfl_tweets.csv` ([src](data/nfl_tweets.csv)).
+The dataset for this project was compiled using the Twitter API. In conjunction with Python, tweets were mined that contained specific hashtags related to each of the NFL's 32 teams. Each tweet was sorted by which team it related to and a sentiment score was calculated for each one using `VADER` sentiment analysis from the `nltk` Python module. To start, 1000 tweets were collected for hashtags related to each team, totaling in a dataset of 32,000 tweets. However, after removing duplicate retweets, roughly 13,000 original tweets remained. The tweets collected were the most recent found and so reflect recent sentiments expressed by Twitter users. The dataset can be found in CSV format in the `data` directory of this repository in `nfl_tweets.csv` ([src](data/nfl_tweets.csv)).
 
-#### Data Dictionary
+### Data Dictionary
 
 | Variable | Data Type | Description | Example |
 |----------|-----------|-------------|---------|
@@ -29,18 +48,20 @@ The dataset for this project was collected using the Twitter API. In conjunction
 | positive | Numeric | The positive sentiment score of the tweet, ranging from 0 to 1 with 0 being least positive and 1 being most positive | 0.6 |
 | neutral | Numeric | The neutral sentiment score of the tweet, ranging from 0 to 1, 0 being least neutral, 1 being most neutral | 0 |
 
-Note that collection of the data comes through the twitter API, which requires a Twitter Developer account. If one was to use the data collection python file found in this repository, they would need to have an account in order to have the appropriate tokens to run the file.
+Note that the data for this project was collected using the Twitter API, which requires a Twitter developer account.
 
 ## Figures
+
+Figures for this project can be found in the `figures` directory of this repository.
 
 ### Table of Contents
 
 | Figure Name | Variables | Summary |
-|----------|-----------|-------------|
-| Boxplot Compound by Region | x = `Region`, y = `Compound` | Boxplot There is not clear differences in distributions between Regions for Compound score. The medians for all appear to be the same, with the West being the most condensed. |
-| Boxplot Compound by Team | x = `Team`, y = `Compound` | There are clear differences in distributions between Teams for Compound score. The New England Patriots have the lowest distribution and the Dallas Cowboys have the most condensed distribution around the median. |
-| Boxplot Negative by Team | x = `Team`, y = `Compound` | There are clear differences in distributions between Teams for Negative score. Some teams have little to no negative ratings above 0, while others have a more visble distribution. All distributions have a median around 0. | 
-| HistogramDensity Compound by Region | x = `Compound`, y = Density, colored density curves by `Region`| The density plot shows a roughly normal distribution for each Region, with a large density around the median. The West has the highest density around the median and the Midwest has the lowest. | 
+|-------------|-----------|---------|
+| Boxplot Compound by Region | x = Region, y = Compound | There are no clear differences in the distributions between regions for the compound score. The medians for all appear to be the same, with the West being the most condensed. |
+| Boxplot Compound by Team | x = Team, y = Compound | There are clear differences in the distributions between teams for the compound score. The New England Patriots have the lowest distribution and the Dallas Cowboys have the most condensed distribution around the median. |
+| Boxplot Negative by Team | x = Team, y = Compound | There are clear differences in distributions between teams for negative score. Some teams have little to no negative ratings above 0, while others have a more visble distribution. All distributions have a median around 0. | 
+| Histogram Density Compound by Region | x = Compound, y = Density, colored density curves by Region | This density plot shows a roughly normal distribution for each region, with a large density around the median. The West has the highest density around the median and the Midwest has the lowest. | 
 
 ## References
 
@@ -51,6 +72,3 @@ Note that collection of the data comes through the twitter API, which requires a
 [3]	“Geographic Levels,” United States Census Bureau. Oct. 8, 2021. [Online], Available: https://census.gov. [Accessed Sept. 14, 2022].
 
 [4]	“Choosing the Correct Statistical Test In SAS, STATA, SPSS and R,” UCLA Advanced Research Computing. [Online], Available: https://stats.oarc.ucla.edu. [Accessed Sept 14, 2022].
-
-
-This project was created as part of the Data Science Project Course (DS 4002)  at the University of Virginia in the Fall of 2022.
