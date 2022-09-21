@@ -4,7 +4,7 @@
 
 This repository contains code, data and figures for a data science project investigating negativity in NFL fan bases across the country through sentiment analysis of tweets.
 
-## Src
+## SRC
 
 ### Installing/Building Code in this Repository
 
