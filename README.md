@@ -30,7 +30,7 @@ Note that collection of the data comes through the twitter API, which requires a
 
 ## Figures
 
-### Table of Contents
+#### Table of Contents
 
 | Figure Name | Variables | Summary |
 |----------|-----------|-------------|
