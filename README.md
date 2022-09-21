@@ -12,7 +12,7 @@ The code found in this repository is two files - nfl_tweets.py and project1code.
 
 ### Usage of Code in this Repository
 
-Given the contents of this repository, users can use certain pieces of code for different contexts. The python data collection file could be used as a general Twitter API process. One could switch out the keywords being used and the context of use in order to conduct sentiment analysis on another topic of interest. The R EDA/analysis code could be used as reference on creating different visuals applicable to this topic, as well as how to conduct appropriate analysis on such a hypothesis. 
+Given the contents of this repository, users can use certain pieces of code for different contexts. The python data collection file could be used as a general Twitter API process. One could switch out the keywords being used and the context of use in order to conduct sentiment analysis on another topic of interest. One should note that in order to use this code, that they must have a Twitter Developer account in order to have unique credentials for the file to run appropriately. The R EDA/analysis code could be used as reference on creating different visuals applicable to this topic, as well as how to conduct appropriate analysis on such a hypothesis. 
 
 ## Data
 
