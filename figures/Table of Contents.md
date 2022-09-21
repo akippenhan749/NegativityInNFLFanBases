@@ -1,7 +1,7 @@
 ### Table of Contents for Figures
 
 | Figure Name | Variables | Summary |
-|----------|-----------|-------------|-------------|
+|----------|-----------|-------------|
 | Boxplot Compound by Region | x = `Region`, y = `Compound` | Boxplot There is not clear differences in distributions between Regions for Compound score. The medians for all appear to be the same, with the West being the most condensed. |
 | Boxplot Compound by Team | x = `Team`, y = `Compound` | There are clear differences in distributions between Teams for Compound score. The New England Patriots have the lowest distribution and the Dallas Cowboys have the most condensed distribution around the median. |
 | Boxplot Negative by Team | x = `Team`, y = `Compound` | There are clear differences in distributions between Teams for Negative score. Some teams have little to no negative ratings above 0, while others have a more visble distribution. All distributions have a median around 0. | 
