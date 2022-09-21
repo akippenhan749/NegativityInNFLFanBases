@@ -2,6 +2,10 @@
 
 ## Repository Contents
 
+This repository contains code, data and figures for a data science project investigating negativity in NFL fan bases across the country through sentiment analysis of tweets.
+
+## Src
+
 ### Installing/Building Code in this Repository
 
 ### Usage of Code in this Repository
@@ -24,5 +28,14 @@ The dataset for this project was collected using the Twitter API. In conjunction
 ## Figures
 
 ## References
+
+[1]	N. Starlight, “What's Toxic Fandom and What Creates It?,”The Arena Media Brands, LLC. April, 1, 2022. [Online], Available: https://reelrundown.com. [Accessed Sept. 7, 2022].
+
+[2]	T. Thompson, “NFL Power Rankings: Counting Down the NFL's Rudest Fanbases,” Bleacher Report Inc. March, 29, 2011. [Online], Available: https://bleacherreport.com. [Accessed Sept. 7, 2022].
+
+[3]	“Geographic Levels,” United States Census Bureau. Oct. 8, 2021. [Online], Available: https://census.gov. [Accessed Sept. 14, 2022].
+
+[4]	“Choosing the Correct Statistical Test In SAS, STATA, SPSS and R,” UCLA Advanced Research Computing. [Online], Available: https://stats.oarc.ucla.edu. [Accessed Sept 14, 2022].
+
 
 This project was created as part of the Data Science Project Course (DS 4002)  at the University of Virginia in the Fall of 2022.
